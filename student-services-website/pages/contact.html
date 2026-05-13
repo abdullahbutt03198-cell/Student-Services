@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — EduReach University</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        EduReach
+      </a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== CONTACT HEADER ==================== -->
+  <div class="contact-header">
+    <div class="hero-badge" style="background:rgba(245,158,11,0.2);color:#F59E0B;border:1px solid rgba(245,158,11,0.3);display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;font-size:.85rem;font-weight:600;margin-bottom:16px;">
+      ✉️ Get In Touch
+    </div>
+    <h1>Contact Student Services</h1>
+    <p>We're here to help. Reach out to us anytime — we'll respond within 24 hours.</p>
+  </div>
+
+  <!-- ==================== CONTACT CONTENT ==================== -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-layout">
+
+        <!-- Left: Info Cards -->
+        <div class="contact-info stagger">
+
+          <div class="info-card">
+            <div class="ic">📍</div>
+            <div>
+              <h4>Campus Address</h4>
+              <p>123 University Avenue, Academic City<br>State, ZIP 45678, Country</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic">📞</div>
+            <div>
+              <h4>Phone Numbers</h4>
+              <p>Main: +1 (234) 567-890<br>Admissions: +1 (234) 567-891</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic">✉️</div>
+            <div>
+              <h4>Email Addresses</h4>
+              <p>General: info@edureach.edu<br>Admissions: admissions@edureach.edu</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic">🕐</div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday: 9:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder">
+            <div class="map-icon">🗺️</div>
+            <p><strong>EduReach University Campus</strong></p>
+            <p>123 University Ave, Academic City</p>
+            <p style="font-size:0.78rem;margin-top:8px;color:var(--text-light);">[Interactive map would appear here]</p>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-card fade-in">
+          <h3>Send Us a Message</h3>
+
+          <form id="contactForm" novalidate>
+
+            <!-- Name + Email Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Ali Hassan"
+                  autocomplete="name"
+                />
+                <div class="error-msg" id="nameError">Please enter your name (at least 2 characters).</div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                />
+                <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="e.g. Scholarship inquiry, Course registration help…"
+              />
+              <div class="error-msg" id="subjectError">Please enter a subject (at least 3 characters).</div>
+            </div>
+
+            <!-- Department -->
+            <div class="form-group">
+              <label for="department">Department (Optional)</label>
+              <select id="department" name="department">
+                <option value="">— Select a department —</option>
+                <option value="admissions">Admissions Office</option>
+                <option value="scholarships">Scholarships & Financial Aid</option>
+                <option value="registration">Course Registration</option>
+                <option value="counseling">Counseling & Wellness</option>
+                <option value="library">Library Services</option>
+                <option value="it">IT Support</option>
+                <option value="international">International Students</option>
+                <option value="other">Other / General Inquiry</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please describe how we can help you…"
+                rows="5"
+              ></textarea>
+              <div class="error-msg" id="messageError">Please enter a message (at least 10 characters).</div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">
+              ✉️ Send Message
+            </button>
+
+            <!-- Success Banner -->
+            <div class="success-banner" id="successBanner">
+              ✅ Thank you! Your message has been sent. We'll get back to you within 24 hours.
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ STRIP ==================== -->
+  <section class="section" style="background:rgba(30,58,138,0.03);border-top:1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <div class="section-tag">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to common student questions.</p>
+      </div>
+
+      <div class="cards-grid stagger" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+        <div class="card" style="text-align:left;padding:28px;">
+          <h3 style="font-size:0.97rem;margin-bottom:8px;">How do I reset my student portal password?</h3>
+          <p>Visit the login page and click "Forgot Password". A reset link will be sent to your registered email within minutes.</p>
+        </div>
+        <div class="card" style="text-align:left;padding:28px;">
+          <h3 style="font-size:0.97rem;margin-bottom:8px;">When does course registration open?</h3>
+          <p>Registration opens 4 weeks before each semester. You'll receive an email notification with your specific registration window.</p>
+        </div>
+        <div class="card" style="text-align:left;padding:28px;">
+          <h3 style="font-size:0.97rem;margin-bottom:8px;">How do I apply for a scholarship?</h3>
+          <p>Log into the student portal, navigate to Financial Aid, and complete the scholarship application form before the deadline.</p>
+        </div>
+        <div class="card" style="text-align:left;padding:28px;">
+          <h3 style="font-size:0.97rem;margin-bottom:8px;">Is counseling services free for students?</h3>
+          <p>Yes! All enrolled students have free access to up to 6 counseling sessions per semester. Book via the portal or call us directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><div class="logo-icon">🎓</div> EduReach University</div>
+        <p>Empowering students with knowledge, opportunity, and the tools to succeed.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">💼</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Admissions</a></li>
+          <li><a href="services.html">Scholarships</a></li>
+          <li><a href="services.html">Registration</a></li>
+          <li><a href="services.html">Counseling</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 123 University Ave</a></li>
+          <li><a href="mailto:info@edureach.edu">✉️ info@edureach.edu</a></li>
+          <li><a href="#">📞 +1 (234) 567-890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EduReach University. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

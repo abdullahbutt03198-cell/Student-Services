@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Services — EduReach University</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        EduReach
+      </a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+        <div class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== SERVICES HEADER ==================== -->
+  <div class="services-header">
+    <div class="hero-badge" style="background:rgba(245,158,11,0.2);color:#F59E0B;border:1px solid rgba(245,158,11,0.3);display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;font-size:.85rem;font-weight:600;margin-bottom:16px;">
+      🛎️ All Services
+    </div>
+    <h1>Student Services</h1>
+    <p>Browse all available services — from enrollment to graduation support.</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar-wrap">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        id="serviceSearch"
+        placeholder="Search services (e.g. scholarship, library…)"
+        autocomplete="off"
+      />
+    </div>
+  </div>
+
+  <!-- ==================== SERVICES GRID ==================== -->
+  <section class="section">
+    <div class="section-inner">
+
+      <div class="services-grid stagger" id="servicesGrid">
+
+        <!-- 1. Admissions -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(30,58,138,0.1);">📋</div>
+          <h3>Admissions</h3>
+          <p>Start your application, track admission status, upload required documents, and get guidance on entry requirements for undergraduate and postgraduate programs.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 2. Scholarships & Financial Aid -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(245,158,11,0.12);">🏆</div>
+          <h3>Scholarships & Financial Aid</h3>
+          <p>Explore merit-based scholarships, need-based grants, government bursaries, and payment plans to fund your education without financial stress.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 3. Course Registration -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(16,185,129,0.1);">📚</div>
+          <h3>Course Registration</h3>
+          <p>Add, drop, or swap courses through our online portal. View prerequisites, check seat availability, and build your personal academic timetable.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 4. Counseling & Wellness -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(139,92,246,0.1);">💬</div>
+          <h3>Counseling & Wellness</h3>
+          <p>Book one-on-one sessions with academic advisors, career counselors, or mental health professionals. Your wellbeing is our priority.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 5. Library Services -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(239,68,68,0.1);">🏛️</div>
+          <h3>Library Services</h3>
+          <p>Access thousands of e-books, journals, and research databases. Reserve physical books, book study rooms, and get research assistance online.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 6. IT & Tech Support -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(6,182,212,0.1);">💻</div>
+          <h3>IT & Tech Support</h3>
+          <p>Get help with your student email, VPN setup, learning management system, campus Wi-Fi, and software licensing for academic tools.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 7. Housing & Accommodation -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(245,158,11,0.12);">🏠</div>
+          <h3>Housing & Accommodation</h3>
+          <p>Apply for on-campus dormitories, view off-campus housing listings, and connect with our housing team for international student accommodation.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 8. Health Services -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(16,185,129,0.1);">🏥</div>
+          <h3>Health Services</h3>
+          <p>Book appointments at the campus clinic, access immunization records, and learn about health insurance coverage for enrolled students.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 9. Career Services -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(30,58,138,0.1);">💼</div>
+          <h3>Career Services</h3>
+          <p>Get CV reviews, interview coaching, internship placements, and connect with our network of 500+ employer partners at career fairs.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 10. International Students -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(139,92,246,0.1);">🌍</div>
+          <h3>International Students</h3>
+          <p>Visa guidance, orientation programs, language support, and cultural integration services designed for students joining from abroad.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 11. Exams & Assessments -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(239,68,68,0.1);">📝</div>
+          <h3>Exams & Assessments</h3>
+          <p>View exam timetables, apply for special consideration, access past papers, and understand grading policies and academic regulations.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+        <!-- 12. Student Clubs & Activities -->
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(6,182,212,0.1);">🎭</div>
+          <h3>Clubs & Activities</h3>
+          <p>Join 100+ student clubs, societies, and sports teams. Get involved in campus events, volunteer programs, and leadership development.</p>
+          <a href="contact.html" class="service-link">Learn more →</a>
+        </div>
+
+      </div>
+
+      <!-- No results message -->
+      <div id="noResults" class="no-results" style="display:none;">
+        🔍 No services match your search. Try different keywords.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CTA STRIP ==================== -->
+  <div class="highlight-strip">
+    <div class="strip-inner">
+      <div>
+        <h3>🤝 Can't find what you're looking for?</h3>
+        <p>Our student support team is ready to help with any question.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><div class="logo-icon">🎓</div> EduReach University</div>
+        <p>Empowering students with knowledge, opportunity, and the tools to succeed.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">💼</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Counseling</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 123 University Ave</a></li>
+          <li><a href="mailto:info@edureach.edu">✉️ info@edureach.edu</a></li>
+          <li><a href="#">📞 +1 (234) 567-890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EduReach University. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
